@@ -7,7 +7,9 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   runApp(MultiProvider(
-    providers: [ChangeNotifierProvider.value(value: MapProvider.initialize())],
+    providers: [
+      ChangeNotifierProvider(create: (context) => MapProvider.initialize())
+    ],
     child: MaterialApp(
       title: "App",
       home: MyApp(),
