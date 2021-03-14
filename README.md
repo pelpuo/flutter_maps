@@ -1,4 +1,4 @@
-# solutions_challenge
+# flutter_maps
 
 A new Flutter project.
 
